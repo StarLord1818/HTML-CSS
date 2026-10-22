@@ -10,9 +10,14 @@ body {
     font-size: 1em;
     line-height: 1.5em;
 }
-p, h1, h2 {
+p {
     margin-bottom: 10px;
     text-align: justify;
+}
+h1, h2 {
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: left;
 }
 header, .normal {
     padding: 20px;  
@@ -20,5 +25,45 @@ header, .normal {
 .flex-content {
     padding: 20px;
     background-color: rgb(160, 160, 160);
+
+    display: flex;
+    flex-flow: column nowrap;
 }
 
+section > article {
+    border: 2px dashed green;
+}
+.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article > .text {
+    flex: 1 1 500px;
+
+}
+
+article > .media {
+    flex: 1 0 400px;
+
+}
+.media > img { 
+    display: block;
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+}
+
+.media > iframe {
+    display: block;
+    margin: auto;
+    padding: 0px 20px;
+    width: 90%;
+}
