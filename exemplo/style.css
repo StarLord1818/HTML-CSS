@@ -1,0 +1,27 @@
+.hero {
+    position: relative;
+    min-height: 500px;
+
+    background-image: url("images/city.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: blueviolet;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 85%,
+        85% 90%,
+        70% 87%,
+        50% 96%,
+        30% 90%,
+        15% 94%,
+        0 85%
+    );
+}
+.holo {
+    position: absolute;
+    bottom: -40px;
+    right: 5%;
+    height: 95%;
+    z-index: 3;
+}
